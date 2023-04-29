@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="NavBar.master.cs" Inherits="ExamenIIProgra.NavBar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="css/NavBar.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="navbar">
+                <a href="Inicio.aspx">Inicio</a>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Reportes
+      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="Usuarios.aspx">Reporte de usuarios</a>
+                        <a href="Mascotas.aspx">Reporte de mascotas</a>
+                        <a href="Citas.aspx">Reporte de control de citas</a>
+                    </div>
+                </div>
+                <a href="Login.aspx">Salir</a>
+            </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
